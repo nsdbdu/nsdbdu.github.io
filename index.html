@@ -231,8 +231,18 @@
                                             </g>
                                         </svg>
                                     </div>
-                                    <h3 class="feature-title">Bonus Points</h3>
-                                    <p class="text-sm">In addition, the houses will be provided with bonus points for the registration between February 17 and 19, 2019, which will be taken for overall championship.</p>
+                                    <h3 class="feature-title">Points Information</h3>
+                                    <p class="text-sm"> Click below to check the current stand of teams.</p>
+
+<div class="popup" onclick="myFunction()">(Points Table)      
+  <span class="popuptext" id="myPopup"> Gryffindor - 1100</br> Hufflepuff - 1050</br> Ravenclaw - 1100</br> Slytherin - 1000</span>
+</div>
+</br></br>
+<p class="text-sm"> Fairplay points are given to each house for team spirit and friendliness. In any event, fairly played team will be rewarded with +1 and second, third and final positions are denominated as +0.50, +0.25 and -0.25 respectively.</p>
+
+<div class="popup" onclick="myFunction2()"> (Fair Play Points)
+  <span class="popuptext" id="myPopup2"> Gryffindor - (+0.25)</br> Hufflepuff - (-0.25)</br> Ravenclaw - (+0.50)</br> Slytherin - (+1.00)</span>
+</div>
                                 </div>
                             </div>
                         </div>
@@ -244,60 +254,12 @@
 
 For any clarifications or modifications please contact us through nsdbdu@gmail.com or on 89737-70821. </br></br>
 
-<canvas id="myChart" width="400" height="400"></canvas>
-<script>
-var ctx = document.getElementById("myChart");
-var myChart = new Chart(ctx, {
-    type: 'bar',
-    data: {
-        labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
-        datasets: [{
-            label: '# of Votes',
-            data: [12, 19, 3, 5, 2, 3],
-            backgroundColor: [
-                'rgba(255, 99, 132, 0.2)',
-                'rgba(54, 162, 235, 0.2)',
-                'rgba(255, 206, 86, 0.2)',
-                'rgba(75, 192, 192, 0.2)',
-                'rgba(153, 102, 255, 0.2)',
-                'rgba(255, 159, 64, 0.2)'
-            ],
-            borderColor: [
-                'rgba(255,99,132,1)',
-                'rgba(54, 162, 235, 1)',
-                'rgba(255, 206, 86, 1)',
-                'rgba(75, 192, 192, 1)',
-                'rgba(153, 102, 255, 1)',
-                'rgba(255, 159, 64, 1)'
-            ],
-            borderWidth: 1
-        }]
-    },
-    options: {
-        scales: {
-            yAxes: [{
-                ticks: {
-                    beginAtZero:true
-                }
-            }]
-        }
-    }
-});
-</script>
-
 <div class="btn-group btn-group-lg">
 <form>
 <input type="button" value="Participants List" onclick="window.open('partlis.html')" />
 </form>
 </div>
 
-<div class="popup" onclick="myFunction()">(Points Table)      
-  <span class="popuptext" id="myPopup"> Gryffindor - 1100</br> Hufflepuff - 1050</br> Ravenclaw - 1100</br> Slytherin - 1000</span>
-</div>
-
-<div class="popup" onclick="myFunction2()"> (Fair Play Points)
-  <span class="popuptext" id="myPopup2"> Gryffindor - (+0.25)</br> Hufflepuff - (-0.25)</br> Ravenclaw - (+0.50)</br> Slytherin - (+1.00)</span>
-</div>
         </main>
 
         <footer class="site-footer text-light">
@@ -372,6 +334,5 @@ var myChart = new Chart(ctx, {
     </div>
 
     <script src="dist/js/main.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
 </body>
 </html>
